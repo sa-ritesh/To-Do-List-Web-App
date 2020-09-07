@@ -1,0 +1,107 @@
+*{
+	font-family: calibri;
+	font-size: 1.1rem;
+}
+body{
+	background:linear-gradient(to right,#acb6e5,#75e9d5);
+}
+#main{
+	max-width: 25rem;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	}
+#heading{
+	margin: 0px;
+	padding: 8px 12px;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+	background-color: #2980b9;
+}
+input{
+	width: 100%;
+	margin:0px;
+	width: 100%;
+	text-align: center;
+	padding: 8px 12px;
+    box-sizing: border-box;
+    border:none;
+}
+input:focus{
+	outline: none;
+}
+.completed{
+	text-decoration: line-through;
+}
+ul{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	margin: 0px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: lightgrey;
+}
+.far{
+	position: absolute;
+	left:-6%;
+	top:0%;
+	color: white;
+	padding: 8px 8px 10px 8px;
+	vertical-align: middle;
+	background-color: red;
+	visibility: hidden;
+	transition: all 0.5s;
+	margin:0px;
+}
+li:hover .far{
+visibility: visible;
+transform:translateX(26px);
+}
+
+@media screen and (max-width: 500px){
+	#main{
+		margin-top: 200px;
+		max-width: 20rem;
+	}
+	li:hover .far{
+		transform:translateX(20px);
+	}
+}
+@media screen and (max-width: 400px){
+	#main{
+		margin-top: 200px;
+		max-width: 15rem;
+	}
+	li:hover .far{
+		transform:translateX(16px);
+	}
+}
+@media screen and (max-width: 350px){
+	#main{
+		margin-top: 200px;
+		max-width: 15rem;
+	}
+	*{
+		font-size: 1rem;
+	}
+	li:hover .far{
+		transform:translateX(15px);
+	}
+}
